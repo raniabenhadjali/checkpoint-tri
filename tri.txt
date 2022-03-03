@@ -1,0 +1,18 @@
+algorithm insertion
+var
+set: array_of integer[n];
+i,j,tmp:integer
+begin
+for i from 1 to n-1 dtep 1 do
+tmp:=set[i]
+j:=i-1
+while (j>=0) do
+if ( tmp<set[j]) then
+set[j+1]:=set[j]
+end_if
+else
+set[j+1]:=tmp
+j--
+end_while
+end_for
+end
